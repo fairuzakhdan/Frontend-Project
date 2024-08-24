@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+body {
+  background-color: var(--bg);
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #fcbf49;
+  z-index: 999;
+}
+.navbar .navbar-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.navbar .navbar-brand span {
+  color: #fcbf49;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.navbar-center a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-right .menu {
+  display: none;
+}
+
+.navbar-right a {
+  color: white;
+  margin-right: 10px;
+}
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /* Menambahkan fallback untuk browser yang tidak mendukung mask */
+  background-color: rgba(0, 0, 0, 1);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, transparent);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, transparent);
+}
+
+
+.content {
+  padding: 1.4rem 7%;
+  /* max-width: 60rem; */
+  width: 100%;
+  /* text-align: center; */
+  position: fixed;
+  top: 200px;
+}
+
+.home .content h1 {
+  color: var(--primary);
+  font-size: 3em;
+  line-height: 1.2;
+}
+.home .content h1 span {
+  color: #fff;
+}
+
+.home .content p {
+  margin-top: 1rem;
+  line-height: 1.4;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  mix-blend-mode: difference;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+}

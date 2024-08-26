@@ -51,6 +51,7 @@ body {
 .navbar-center {
   display: flex;
   justify-content: center;
+  /* background-color: var(--primary); */
   column-gap: 20px;
 }
 .navbar-center a {
@@ -142,19 +143,40 @@ body {
   text-align: justify;
 }
 
-.menu-container {
-  padding-top: 70px;
+.btn-home {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  margin-top: 1rem;
+  display: inline-block;
+  box-shadow: #010101 1px 1px 3px;
+}
+
+.btn-home:hover {
+  background-color: chocolate;
+  color: #fff;
+}
+
+.menu-container,
+.about-container {
+  padding-top: 5rem;
   text-align: center;
 }
 
-.menu-container h1 {
+.menu-container h1,
+.about-container h1 {
   font-size: 2rem;
-  color: #fff;
-  margin-bottom: 30px;
+  color: var(--primary);
+  margin-bottom: 20px;
 }
 
 .menu-container h1 span {
-  color: var(--primary);
+  color: #fff;
 }
 
 .menu-content {
@@ -180,7 +202,33 @@ body {
   -o-border-radius: 50%;
 }
 
+.about-content {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
 
+.about-content img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.about-text p {
+  text-align: justify;
+}
+
+.btn-buy {
+  background-color: #fcbf49;
+  width: 150px;
+  /* margin-top: 10px; */
+ padding: 10px;
+}
 
 @media only screen and (max-width: 600px) {
   html {
@@ -207,7 +255,7 @@ body {
     display: inline-block;
     top: 100%;
     right: -100%;
-    background-color: #fff;
+    background-color: #d89c2b;
     width: 10rem;
     height: 100vh;
     transition: 0.2s;
@@ -217,9 +265,7 @@ body {
     -o-transition: 0.2s;
   }
   .navbar-center.active {
-    display: block;
     right: 0;
-    background-color: #fff;
   }
   .navbar-center a {
     color: #010101;
@@ -260,12 +306,29 @@ body {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
   }
+  .about-content {
+    row-gap: 10px;
+    margin: 0 2rem;
+    flex-wrap: wrap;
+  }
+
+  .about-content img {
+    width: 100%; /* Gambar akan menyesuaikan lebar elemen induknya */
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   html {
     font-size: 90%;
+  }
+  .about-content {
+    margin: 0 2rem;
+    flex-wrap: nowrap;
+  }
+
+  .about-content img {
+    width: 60%; /* Gambar akan menyesuaikan lebar elemen induknya */
   }
 }
 

@@ -230,14 +230,12 @@ body {
 .btn-buy {
   background-color: #fcbf49;
   width: 150px;
-  /* margin-top: 10px; */
   padding: 10px;
 }
 
 .contact-content {
   display: flex;
   justify-content: center;
-  margin-bottom: 200px;
 }
 
 .contact-content iframe {
@@ -248,7 +246,6 @@ body {
 .contact-form {
   background-color: #b6895b;
   padding: 20px;
-  /* flex-direction: column; */
 }
 .input-box {
   display: flex;
@@ -260,9 +257,32 @@ body {
   padding-right: 10px;
 }
 
-.input-box input {
+.input-box input,textarea {
   width: 300px;
   padding: 10px;
+}
+
+#message{
+  margin-top: 20px;
+}
+
+.btn-send {
+  background-color:#fcbf49;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  display: inline-block;
+  box-shadow: #010101 1px 1px 3px;
+}
+
+.btn-send:hover {
+  background-color: chocolate;
+  color: #fff;
 }
 
 

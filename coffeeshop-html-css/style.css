@@ -14,10 +14,12 @@ html {
   border: none;
   text-decoration: none;
   font-family: "Poppins";
+  
 }
 body {
   background-color: var(--bg);
   color: #fff;
+  /* height: 1000vh; */
 }
 .navbar {
   display: flex;
@@ -163,13 +165,15 @@ body {
 }
 
 .menu-container,
-.about-container {
+.about-container,
+.contact-container {
   padding-top: 5rem;
   text-align: center;
 }
 
 .menu-container h1,
-.about-container h1 {
+.about-container h1,
+.contact-container h1 {
   font-size: 2rem;
   color: var(--primary);
   margin-bottom: 20px;
@@ -227,8 +231,40 @@ body {
   background-color: #fcbf49;
   width: 150px;
   /* margin-top: 10px; */
- padding: 10px;
+  padding: 10px;
 }
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.contact-content iframe {
+  width: 350px;
+  height: 400px;
+}
+
+.contact-form {
+  background-color: #b6895b;
+  padding: 20px;
+  /* flex-direction: column; */
+}
+.input-box {
+  display: flex;
+  margin-bottom: 20px;
+  column-gap: 10px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.input-box input {
+  width: 300px;
+  padding: 10px;
+}
+
 
 @media only screen and (max-width: 600px) {
   html {
@@ -314,6 +350,20 @@ body {
 
   .about-content img {
     width: 100%; /* Gambar akan menyesuaikan lebar elemen induknya */
+  }
+  .contact-content {
+    flex-wrap: wrap;
+    padding: 20px;
+    row-gap: 10px;
+  }
+
+ 
+.contact-content iframe {
+  height: 300px;
+  width: 100%;
+}
+  .contact-form {
+    width: 100%;
   }
 }
 

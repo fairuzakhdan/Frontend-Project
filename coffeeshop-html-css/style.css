@@ -285,6 +285,30 @@ body {
   color: #fff;
 }
 
+.footer-center {
+  margin-top: 50px;
+  padding: 20px;
+  background-color:#d89c2b;
+  display: block;
+  /* font-size: 1rem; */
+  text-align: center;
+}
+
+.footer-center p {
+  font-size: 0.9rem;
+}
+
+.footer-center ul li {
+  color: #010101;
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+  font-size: 0.8rem;
+}
+
+.footer-center ul li a {
+  color: #010101;
+}
 
 @media only screen and (max-width: 600px) {
   html {

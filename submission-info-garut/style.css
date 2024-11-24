@@ -8,6 +8,7 @@ body {
   font-family: "Quicksand";
 }
 
+
 h1,
 h3 {
   color: #b46d2a;
@@ -16,6 +17,7 @@ h3 {
 .nav-container {
   display: flex;
   flex-wrap: wrap;
+  display: inline;
 }
 /* .header-image {
     background-image: url('img/grt.jpeg');
@@ -25,7 +27,8 @@ h3 {
     background-size: cover;
 } */
 .header-description {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/header.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -46,6 +49,8 @@ h3 {
   background-color: #b46d2a;
   width: 100%;
   padding: 20px;
+  position: sticky;
+  top: 0;
 }
 
 .nav-list ul {

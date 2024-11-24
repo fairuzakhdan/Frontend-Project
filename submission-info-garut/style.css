@@ -64,9 +64,9 @@ ul li a {
 }
 
 ul li a:hover {
-    color: black;
-    transition: 0.2s ease-in-out;
-    text-decoration: underline;
+  color: black;
+  transition: 0.2s ease-in-out;
+  text-decoration: underline;
 }
 
 main {
@@ -104,7 +104,7 @@ section {
 
 .card h1 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 p {
@@ -129,4 +129,56 @@ p {
 
 .profile section h3 {
   margin: auto;
+}
+
+footer {
+  padding: 20px;
+  background-color: #b46d2a;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a {
+  color: black;
+}
+
+footer p {
+  background-color: #b46d2a;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-direction: column;
+  }
+  main aside {
+    align-self: center;
+  }
+
+  .profile section {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+      justify-content: center;
+    }
+    .header-description {
+        font-size: 1.2em;
+    }
+    main aside {
+      align-self: stretch;
+    }
+    footer p {
+        font-size: 1rem;
+    }
 }

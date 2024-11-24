@@ -63,6 +63,12 @@ ul li a {
   font-weight: bold;
 }
 
+ul li a:hover {
+    color: black;
+    transition: 0.2s ease-in-out;
+    text-decoration: underline;
+}
+
 main {
   display: flex;
   padding: 30px;

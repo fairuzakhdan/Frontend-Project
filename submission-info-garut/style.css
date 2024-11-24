@@ -98,7 +98,6 @@ main {
 section {
   display: flex;
   gap: 20px;
-  /* font-size: 1.0em; */
   flex-wrap: wrap;
 }
 
@@ -171,6 +170,7 @@ footer p {
 @media screen and (max-width: 768px) {
   nav ul {
       justify-content: center;
+      padding: 0 20px;
     }
     .header-description {
         font-size: 1.2em;

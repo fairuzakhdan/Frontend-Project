@@ -8,6 +8,10 @@ body {
     font-family: 'Quicksand';
 }
 
+h1, h3 {
+    color: #b46d2a ;
+}
+
 .nav-container {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +57,7 @@ main {
     display: flex;
     padding: 30px;
     gap: 20px;
+    
 }
 
 #content {
@@ -79,6 +84,7 @@ main {
 section {
     display: flex;
     gap: 20px;
+    /* font-size: 1.0em; */
     flex-wrap: wrap;
 }
 
@@ -93,14 +99,21 @@ p {
 }
 
 
-.profile {
+.profile header {
     text-align: center;
-    /* padding: 0; */
-    justify-content: center;
-    
 }
 
-.profile p {
+.profile p  {
     text-indent: 0;
     text-align: center;
+}
+
+.profile {
+    text-align: center;
+    padding: 30px 40px;
+    gap: 0;
+}
+
+.profile section h3 {
+    margin: auto;
 }

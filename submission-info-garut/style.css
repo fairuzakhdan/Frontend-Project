@@ -8,7 +8,6 @@ body {
   font-family: "Quicksand";
 }
 
-
 h1,
 h3 {
   color: #b46d2a;
@@ -19,13 +18,7 @@ h3 {
   flex-wrap: wrap;
   display: inline;
 }
-/* .header-image {
-    background-image: url('img/grt.jpeg');
-    height: 300px;
-    position: absolute;
-    width: 100%;
-    background-size: cover;
-} */
+
 .header-description {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("img/header.jpg");
@@ -48,7 +41,7 @@ h3 {
 .nav-list {
   background-color: #b46d2a;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   position: sticky;
   top: 0;
 }

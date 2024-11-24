@@ -16,9 +16,13 @@ h1, h3 {
     display: flex;
     flex-wrap: wrap;
 }
+.header-image {
+    background-image: url('img/grt.jpeg');
+    position: absolute;
+}
 
 .header-description {
-    
+    position: relative;
     background-color: #d69456;
     display: flex;
     flex-wrap: wrap;

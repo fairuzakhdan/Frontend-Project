@@ -169,16 +169,16 @@ footer p {
 
 @media screen and (max-width: 768px) {
   nav ul {
-      justify-content: center;
-      padding: 0 20px;
-    }
-    .header-description {
-        font-size: 1.2em;
-    }
-    main aside {
-      align-self: stretch;
-    }
-    footer p {
-        font-size: 1rem;
-    }
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .header-description {
+    font-size: 1.2em;
+  }
+  main aside {
+    align-self: stretch;
+  }
+  footer p {
+    font-size: 1rem;
+  }
 }
